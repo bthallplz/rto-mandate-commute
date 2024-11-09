@@ -49,7 +49,7 @@ output = template.render(generate_time=datetime.strftime(datetime.now(),
                                                          "%d %B %Y %H:%M"),
                          posts=posts, feeds=feeds)
 
-with open('index.html', 'w') as html:
+with open('output/index.html', 'w') as html:
     html.write(output)
 
 template = env.get_template('rss20.xml.j2')
@@ -58,5 +58,21 @@ output = template.render(generate_time=datetime.strftime(datetime.now(),
                                                          "%d %B %Y %H:%M"),
                          posts=posts, feeds=feeds)
 
-with open('rss20.xml', 'w') as rss:
+with open('output/rss20.xml', 'w') as rss:
     rss.write(output)
+
+# Copying the planet.css file to the /output directory if it isn't already in there
+import shutil
+import os
+
+# Define source file and destination directory
+source_file = "./templates/planet.css"
+destination_dir = "./output"
+
+# Check if file exists in the destination directory
+if not os.path.isfile(os.path.join(destination_dir, os.path.basename(source_file))):
+    # File does not exist in the destination directory, copy the source file
+    shutil.copy(source_file, destination_dir)
+    print("Copied file to the destination directory.")
+else:
+    print("File already exists in the destination directory.")
