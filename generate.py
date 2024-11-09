@@ -45,7 +45,7 @@ env.filters['date'] = filter_date
 
 template = env.get_template('index.html.j2')
 
-output = template.render(generate_time=datetime.strftime(datetime.utcnow(),
+output = template.render(generate_time=datetime.strftime(datetime.now(),
                                                          "%d %B %Y %H:%M"),
                          posts=posts, feeds=feeds)
 
@@ -54,7 +54,7 @@ with open('index.html', 'w') as html:
 
 template = env.get_template('rss20.xml.j2')
 
-output = template.render(generate_time=datetime.strftime(datetime.utcnow(),
+output = template.render(generate_time=datetime.strftime(datetime.now(),
                                                          "%d %B %Y %H:%M"),
                          posts=posts, feeds=feeds)
 
