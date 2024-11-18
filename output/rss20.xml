@@ -1,0 +1,636 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+	<title>Developers Planet</title>
+	<link>https://devplanet.one.pl/</link>
+	<language>en</language>
+	<description>Developers Planet - https://devplanet.one.pl/</description>
+	<atom:link rel="self" href="https://devplanet.cf/rss20.xml" type="application/rss+xml"/>
+
+
+<item>
+	<title>Michal Čihař (michal@cihar.com): Spring cleanup</title>
+	<guid isPermaLink="false">tag:https://blog.cihar.com/,2019-05-29:https://blog.cihar.com/archives/2019/05/29/spring-cleanup/?utm_source=atom1</guid>
+	<link>https://blog.cihar.com/archives/2019/05/29/spring-cleanup/?utm_source=atom1</link>
+	<description>&lt;p&gt;What you can probably spot from past posts on my blog, my open source contributions are heavily focused on &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate&lt;/a&gt; and I&#39;ve phased out many other activities. The main reason being reduced amount of free time with growing family, what leads to focusing on project which I like most. It&#39;s fun to develop it and it seems like it will work business wise as well, but that&#39;s still something to be shown in the future.&lt;/p&gt;
+&lt;p&gt;Anyway it&#39;s time to admit that I will not spend much time on other things in near future.&lt;/p&gt;
+&lt;p&gt;Earlier this year, I&#39;ve resigned from being &lt;a href=&#34;https://www.phpmyadmin.net/&#34;&gt;phpMyAdmin&lt;/a&gt; project admin. I was in this role for three years and I&#39;ve been contributing to the project &lt;a href=&#34;https://blog.cihar.com/archives/2006/03/15/muj-free-software-2-phpmyadmin/&#34;&gt;for 18 years&lt;/a&gt;. It has been time, but I haven&#39;t contributed significantly in last few months. I will stay with the project for few more months to handle smooth transition, but it&#39;s time to say good bye there.&lt;/p&gt;
+&lt;p&gt;On the &lt;a href=&#34;https://www.debian.org/&#34;&gt;Debian&lt;/a&gt; project I want to stay active, but I&#39;ve reduced my involvement and I&#39;m looking for maintainers for &lt;a href=&#34;https://qa.debian.org/developer.php?login=nijel&amp;amp;comaint=yes&#34;&gt;some of my packages&lt;/a&gt; (mostly RPM related). The special case is the phpMyAdmin package where I was &lt;a href=&#34;https://bugs.debian.org/879741&#34;&gt;looking for help since 2017&lt;/a&gt;, but it still didn&#39;t help from the package becoming heavily outdated with security issues what lead to it&#39;s removal from Buster. It seems that this has &lt;a href=&#34;https://bugs.debian.org/879741&#34;&gt;triggered enough attention&lt;/a&gt; to resurrect work on the updated packages.&lt;/p&gt;
+&lt;p&gt;Today I&#39;ve gone through my personal repos on GitHub and I&#39;ve &lt;a href=&#34;https://github.com/nijel?type=archived&amp;amp;tab=repositories&#34;&gt;archived bunch of them&lt;/a&gt;. These have not received any attention for years (many of them were dead by the time I&#39;ve imported them to GitHub) and it&#39;s good to clearly show that to random visitors.&lt;/p&gt;
+&lt;p&gt;I&#39;m still main developer behind &lt;a href=&#34;https://wammu.eu/&#34;&gt;Gammu&lt;/a&gt;, but I&#39;m not really doing there more than occasional review of pull requests and merging them. I don&#39;t want to abandon the project without handing it out to somebody else, but the problem is that &lt;a href=&#34;https://github.com/gammu/gammu/issues/475&#34;&gt;there is nobody else right now&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p style=&#34;font-size: smaller;&#34;&gt;
+Filed under: 
+
+&lt;a href=&#34;https://blog.cihar.com/archives/debian/&#34;&gt;Debian&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/english/&#34;&gt;English&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/gammu/&#34;&gt;Gammu&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/suse/&#34;&gt;SUSE&lt;/a&gt;
+
+&lt;/p&gt;</description>
+	<pubDate>Wed, 29 May 2019 10:00:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>Michal Čihař (michal@cihar.com): Weblate blog moved</title>
+	<guid isPermaLink="false">tag:https://blog.cihar.com/,2019-05-09:https://blog.cihar.com/archives/2019/05/09/weblate-blog-moved/?utm_source=atom1</guid>
+	<link>https://blog.cihar.com/archives/2019/05/09/weblate-blog-moved/?utm_source=atom1</link>
+	<description>&lt;p&gt;I&#39;ve been publishing updates about Weblate on my blog for past seven years. Now the project has grown up enough to deserve own space to publish posts. Please update your bookmarks and RSS readers to &lt;a href=&#34;https://weblate.org/news/&#34;&gt;new location&lt;/a&gt; directly on &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate website&lt;/a&gt; will receive another updates in upcoming weeks, I&#39;m really looking forward to these.&lt;/p&gt;
+&lt;p&gt;New address for Weblate blog is &lt;a href=&#34;https://weblate.org/news/&#34;&gt;https://weblate.org/news/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;New address for the RSS feed is &lt;a href=&#34;https://weblate.org/feed/&#34;&gt;https://weblate.org/feed/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p style=&#34;font-size: smaller;&#34;&gt;
+Filed under: 
+
+&lt;a href=&#34;https://blog.cihar.com/archives/debian/&#34;&gt;Debian&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/english/&#34;&gt;English&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/suse/&#34;&gt;SUSE&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/weblate/&#34;&gt;Weblate&lt;/a&gt;
+
+&lt;/p&gt;</description>
+	<pubDate>Thu, 09 May 2019 14:21:18 +0000</pubDate>
+</item>
+
+<item>
+	<title>Michal Čihař (michal@cihar.com): Weblate 3.6.1</title>
+	<guid isPermaLink="false">tag:https://blog.cihar.com/,2019-04-26:https://blog.cihar.com/archives/2019/04/26/weblate-361/?utm_source=atom1</guid>
+	<link>https://blog.cihar.com/archives/2019/04/26/weblate-361/?utm_source=atom1</link>
+	<description>&lt;p&gt;&lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate 3.6.1&lt;/a&gt; has been released today. It is a bugfix release fixing several issues reported after the 3.6 release.&lt;/p&gt;
+&lt;p&gt;Full list of changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved handling of monolingual Xliff files.&lt;/li&gt;
+&lt;li&gt;Fixed digest notifications in some corner cases.&lt;/li&gt;
+&lt;li&gt;Fixed addon script error alert.&lt;/li&gt;
+&lt;li&gt;Fixed generating MO file for monolingual PO files.&lt;/li&gt;
+&lt;li&gt;Fixed display of uninstalled checks.&lt;/li&gt;
+&lt;li&gt;Indicate administered projects on project listing.&lt;/li&gt;
+&lt;li&gt;Allow update to recover from missing VCS repository.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are upgrading from older version, please follow our &lt;a href=&#34;https://docs.weblate.org/en/latest/admin/upgrade.html&#34;&gt;upgrading instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find more information about &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate&lt;/a&gt; on &lt;a href=&#34;https://weblate.org&#34;&gt;https://weblate.org&lt;/a&gt;, the code is hosted on &lt;a href=&#34;https://github.com/WeblateOrg/weblate&#34;&gt;Github&lt;/a&gt;. If you are curious how it looks, you can try it out on &lt;a href=&#34;https://demo.weblate.org/&#34;&gt;demo server&lt;/a&gt;.  &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate&lt;/a&gt; is also being used on &lt;a href=&#34;https://hosted.weblate.org/&#34;&gt;https://hosted.weblate.org/&lt;/a&gt; as official translating service for phpMyAdmin, OsmAnd, Turris, FreedomBox, Weblate itself and many other projects.&lt;/p&gt;
+&lt;p&gt;Should you be looking for hosting of translations for your project, I&#39;m happy to &lt;a href=&#34;https://weblate.org/hosting/&#34;&gt;host them for you&lt;/a&gt; or help with setting it up on your infrastructure.&lt;/p&gt;
+&lt;p&gt;Further development of Weblate would not be possible without people &lt;a href=&#34;https://weblate.org/donate/&#34;&gt;providing donations&lt;/a&gt;, thanks to everybody who have helped so far! The &lt;a href=&#34;https://github.com/WeblateOrg/weblate/milestone/41&#34;&gt;roadmap for next release&lt;/a&gt; is just being prepared, you can influence this by expressing support for individual issues either by comments or by &lt;a href=&#34;https://www.bountysource.com/teams/weblate/issues&#34;&gt;providing bounty for them&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p style=&#34;font-size: smaller;&#34;&gt;
+Filed under: 
+
+&lt;a href=&#34;https://blog.cihar.com/archives/debian/&#34;&gt;Debian&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/english/&#34;&gt;English&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/suse/&#34;&gt;SUSE&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/weblate/&#34;&gt;Weblate&lt;/a&gt;
+
+&lt;/p&gt;</description>
+	<pubDate>Fri, 26 Apr 2019 21:23:44 +0000</pubDate>
+</item>
+
+<item>
+	<title>Michal Čihař (michal@cihar.com): Weblate 3.6</title>
+	<guid isPermaLink="false">tag:https://blog.cihar.com/,2019-04-20:https://blog.cihar.com/archives/2019/04/20/weblate-36/?utm_source=atom1</guid>
+	<link>https://blog.cihar.com/archives/2019/04/20/weblate-36/?utm_source=atom1</link>
+	<description>&lt;p&gt;&lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate 3.6&lt;/a&gt; has been released today. It brings rewritten notifications, user data download and several other improvements. It also sets depreciation timeline for Python 2 installations - after April 2020 Weblate will only support Python 3.&lt;/p&gt;
+&lt;p&gt;Full list of changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for downloading user data.&lt;/li&gt;
+&lt;li&gt;Addons are now automatically triggered upon installation.&lt;/li&gt;
+&lt;li&gt;Improved instructions for resolving merge conflicts.&lt;/li&gt;
+&lt;li&gt;Cleanup addon is now compatible with app store metadata translations.&lt;/li&gt;
+&lt;li&gt;Configurable language code syntax when adding new translations.&lt;/li&gt;
+&lt;li&gt;Warn about using Python 2 with planned termination of support in April 2020.&lt;/li&gt;
+&lt;li&gt;Extract special chars from the source string for visual keyboard.&lt;/li&gt;
+&lt;li&gt;Extended contributor stats to reflect both source and target counts.&lt;/li&gt;
+&lt;li&gt;Admins and consistency addons can now add translations even if disabled for users.&lt;/li&gt;
+&lt;li&gt;Fixed description of toggle disabling &lt;code&gt;Language-Team&lt;/code&gt; header manipulation.&lt;/li&gt;
+&lt;li&gt;Notify users mentioned in comments.&lt;/li&gt;
+&lt;li&gt;Removed file format autodetection from component setup.&lt;/li&gt;
+&lt;li&gt;Fixed generating MO file for monolingual PO files.&lt;/li&gt;
+&lt;li&gt;Added digest notifications.&lt;/li&gt;
+&lt;li&gt;Added support for muting component notifications.&lt;/li&gt;
+&lt;li&gt;Added notifications for new alerts, whiteboard messages or components.&lt;/li&gt;
+&lt;li&gt;Notifications for administered projects can now be configured.&lt;/li&gt;
+&lt;li&gt;Improved handling of three letter language codes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are upgrading from older version, please follow our &lt;a href=&#34;https://docs.weblate.org/en/latest/admin/upgrade.html&#34;&gt;upgrading instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find more information about &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate&lt;/a&gt; on &lt;a href=&#34;https://weblate.org&#34;&gt;https://weblate.org&lt;/a&gt;, the code is hosted on &lt;a href=&#34;https://github.com/WeblateOrg/weblate&#34;&gt;Github&lt;/a&gt;. If you are curious how it looks, you can try it out on &lt;a href=&#34;https://demo.weblate.org/&#34;&gt;demo server&lt;/a&gt;.  &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate&lt;/a&gt; is also being used on &lt;a href=&#34;https://hosted.weblate.org/&#34;&gt;https://hosted.weblate.org/&lt;/a&gt; as official translating service for phpMyAdmin, OsmAnd, Turris, FreedomBox, Weblate itself and many other projects.&lt;/p&gt;
+&lt;p&gt;Should you be looking for hosting of translations for your project, I&#39;m happy to &lt;a href=&#34;https://weblate.org/hosting/&#34;&gt;host them for you&lt;/a&gt; or help with setting it up on your infrastructure.&lt;/p&gt;
+&lt;p&gt;Further development of Weblate would not be possible without people &lt;a href=&#34;https://weblate.org/donate/&#34;&gt;providing donations&lt;/a&gt;, thanks to everybody who have helped so far! The &lt;a href=&#34;https://github.com/WeblateOrg/weblate/milestone/41&#34;&gt;roadmap for next release&lt;/a&gt; is just being prepared, you can influence this by expressing support for individual issues either by comments or by &lt;a href=&#34;https://www.bountysource.com/teams/weblate/issues&#34;&gt;providing bounty for them&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p style=&#34;font-size: smaller;&#34;&gt;
+Filed under: 
+
+&lt;a href=&#34;https://blog.cihar.com/archives/debian/&#34;&gt;Debian&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/english/&#34;&gt;English&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/suse/&#34;&gt;SUSE&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/weblate/&#34;&gt;Weblate&lt;/a&gt;
+
+&lt;/p&gt;</description>
+	<pubDate>Sat, 20 Apr 2019 12:46:10 +0000</pubDate>
+</item>
+
+<item>
+	<title>Michal Čihař (michal@cihar.com): translation-finder 1.1</title>
+	<guid isPermaLink="false">tag:https://blog.cihar.com/,2019-03-20:https://blog.cihar.com/archives/2019/03/20/translation-finder-11/?utm_source=atom1</guid>
+	<link>https://blog.cihar.com/archives/2019/03/20/translation-finder-11/?utm_source=atom1</link>
+	<description>&lt;p&gt;The &lt;a href=&#34;https://pypi.org/project/translation-finder/&#34;&gt;translation-finder&lt;/a&gt; module has been released in version 1.1. It is used by &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate&lt;/a&gt; to detect translatable files in the repository making setup of translation components in Weblate much easier. This release brings lot of improvements based on feedback from our users, making the detection more reliable and accurate.&lt;/p&gt;
+&lt;p&gt;Full list of changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved detection of translation with full language code.&lt;/li&gt;
+&lt;li&gt;Improved detection of language code in directory and file name.&lt;/li&gt;
+&lt;li&gt;Improved detection of language code separated by full stop.&lt;/li&gt;
+&lt;li&gt;Added detection for app store metadata files.&lt;/li&gt;
+&lt;li&gt;Added detection for JSON files.&lt;/li&gt;
+&lt;li&gt;Ignore symlinks during discovery.&lt;/li&gt;
+&lt;li&gt;Improved detection of matching pot files in several corner cases.&lt;/li&gt;
+&lt;li&gt;Improved detection of monolingual Gettext.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&#34;font-size: smaller;&#34;&gt;
+Filed under: 
+
+&lt;a href=&#34;https://blog.cihar.com/archives/debian/&#34;&gt;Debian&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/english/&#34;&gt;English&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/suse/&#34;&gt;SUSE&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/weblate/&#34;&gt;Weblate&lt;/a&gt;
+
+&lt;/p&gt;</description>
+	<pubDate>Wed, 20 Mar 2019 14:40:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>Michal Čihař (michal@cihar.com): Weblate 3.5.1</title>
+	<guid isPermaLink="false">tag:https://blog.cihar.com/,2019-03-10:https://blog.cihar.com/archives/2019/03/10/weblate-351/?utm_source=atom1</guid>
+	<link>https://blog.cihar.com/archives/2019/03/10/weblate-351/?utm_source=atom1</link>
+	<description>&lt;p&gt;&lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate 3.5.1&lt;/a&gt; has been released today. Compared to the 3.5 release it brings several bug fixes and performance improvements.&lt;/p&gt;
+&lt;p&gt;Full list of changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed Celery systemd unit example.&lt;/li&gt;
+&lt;li&gt;Fixed notifications from http repositories with login.&lt;/li&gt;
+&lt;li&gt;Fixed race condition in editing source string for monolingual translations.&lt;/li&gt;
+&lt;li&gt;Include output of failed addon execution in the logs.&lt;/li&gt;
+&lt;li&gt;Improved validation of choices for adding new language.&lt;/li&gt;
+&lt;li&gt;Allow to edit file format in component settings.&lt;/li&gt;
+&lt;li&gt;Update installation instructions to prefer Python 3.&lt;/li&gt;
+&lt;li&gt;Performance and consistency improvements for loading translations.&lt;/li&gt;
+&lt;li&gt;Make Microsoft Terminology service compatible with current zeep releases.&lt;/li&gt;
+&lt;li&gt;Localization updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are upgrading from older version, please follow our &lt;a href=&#34;https://docs.weblate.org/en/latest/admin/upgrade.html&#34;&gt;upgrading instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find more information about &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate&lt;/a&gt; on &lt;a href=&#34;https://weblate.org&#34;&gt;https://weblate.org&lt;/a&gt;, the code is hosted on &lt;a href=&#34;https://github.com/WeblateOrg/weblate&#34;&gt;Github&lt;/a&gt;. If you are curious how it looks, you can try it out on &lt;a href=&#34;https://demo.weblate.org/&#34;&gt;demo server&lt;/a&gt;.  &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate&lt;/a&gt; is also being used on &lt;a href=&#34;https://hosted.weblate.org/&#34;&gt;https://hosted.weblate.org/&lt;/a&gt; as official translating service for phpMyAdmin, OsmAnd, Turris, FreedomBox, Weblate itself and many other projects.&lt;/p&gt;
+&lt;p&gt;Should you be looking for hosting of translations for your project, I&#39;m happy to &lt;a href=&#34;https://weblate.org/hosting/&#34;&gt;host them for you&lt;/a&gt; or help with setting it up on your infrastructure.&lt;/p&gt;
+&lt;p&gt;Further development of Weblate would not be possible without people &lt;a href=&#34;https://weblate.org/donate/&#34;&gt;providing donations&lt;/a&gt;, thanks to everybody who have helped so far! The &lt;a href=&#34;https://github.com/WeblateOrg/weblate/milestone/39&#34;&gt;roadmap for next release&lt;/a&gt; is just being prepared, you can influence this by expressing support for individual issues either by comments or by &lt;a href=&#34;https://www.bountysource.com/teams/weblate/issues&#34;&gt;providing bounty for them&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p style=&#34;font-size: smaller;&#34;&gt;
+Filed under: 
+
+&lt;a href=&#34;https://blog.cihar.com/archives/debian/&#34;&gt;Debian&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/english/&#34;&gt;English&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/suse/&#34;&gt;SUSE&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/weblate/&#34;&gt;Weblate&lt;/a&gt;
+
+&lt;/p&gt;</description>
+	<pubDate>Sun, 10 Mar 2019 15:59:19 +0000</pubDate>
+</item>
+
+<item>
+	<title>Michal Čihař (michal@cihar.com): Weblate 3.5</title>
+	<guid isPermaLink="false">tag:https://blog.cihar.com/,2019-03-03:https://blog.cihar.com/archives/2019/03/03/weblate-35/?utm_source=atom1</guid>
+	<link>https://blog.cihar.com/archives/2019/03/03/weblate-35/?utm_source=atom1</link>
+	<description>&lt;p&gt;&lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate 3.5&lt;/a&gt; has been released today. It includes improvements in the translation memory, addons or alerting.&lt;/p&gt;
+&lt;p&gt;Full list of changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved performance of built in translation memory.&lt;/li&gt;
+&lt;li&gt;Added interface to manage global translation memory.&lt;/li&gt;
+&lt;li&gt;Improved alerting on bad component state.&lt;/li&gt;
+&lt;li&gt;Added user interface to manage whiteboard messages.&lt;/li&gt;
+&lt;li&gt;Addon commit message now can be configured.&lt;/li&gt;
+&lt;li&gt;Reduce number of commits when updating upstream repository.&lt;/li&gt;
+&lt;li&gt;Fixed possible metadata loss when moving component between projects.&lt;/li&gt;
+&lt;li&gt;Improved navigation in the zen mode.&lt;/li&gt;
+&lt;li&gt;Added several new quality checks (Markdown related and URL).&lt;/li&gt;
+&lt;li&gt;Added support for app store metadata files.&lt;/li&gt;
+&lt;li&gt;Added support for toggling GitHub or Gerrit integration.&lt;/li&gt;
+&lt;li&gt;Added check for Kashida letters.&lt;/li&gt;
+&lt;li&gt;Added option to squash commits based on authors.&lt;/li&gt;
+&lt;li&gt;Improved support for xlsx file format.&lt;/li&gt;
+&lt;li&gt;Compatibility with tesseract 4.0.&lt;/li&gt;
+&lt;li&gt;Billing addon now removes projects for unpaid billings after 45 days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are upgrading from older version, please follow our &lt;a href=&#34;https://docs.weblate.org/en/latest/admin/upgrade.html&#34;&gt;upgrading instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find more information about &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate&lt;/a&gt; on &lt;a href=&#34;https://weblate.org&#34;&gt;https://weblate.org&lt;/a&gt;, the code is hosted on &lt;a href=&#34;https://github.com/WeblateOrg/weblate&#34;&gt;Github&lt;/a&gt;. If you are curious how it looks, you can try it out on &lt;a href=&#34;https://demo.weblate.org/&#34;&gt;demo server&lt;/a&gt;.  &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate&lt;/a&gt; is also being used on &lt;a href=&#34;https://hosted.weblate.org/&#34;&gt;https://hosted.weblate.org/&lt;/a&gt; as official translating service for phpMyAdmin, OsmAnd, Turris, FreedomBox, Weblate itself and many other projects.&lt;/p&gt;
+&lt;p&gt;Should you be looking for hosting of translations for your project, I&#39;m happy to &lt;a href=&#34;https://weblate.org/hosting/&#34;&gt;host them for you&lt;/a&gt; or help with setting it up on your infrastructure.&lt;/p&gt;
+&lt;p&gt;Further development of Weblate would not be possible without people &lt;a href=&#34;https://weblate.org/donate/&#34;&gt;providing donations&lt;/a&gt;, thanks to everybody who have helped so far! The &lt;a href=&#34;https://github.com/WeblateOrg/weblate/milestone/39&#34;&gt;roadmap for next release&lt;/a&gt; is just being prepared, you can influence this by expressing support for individual issues either by comments or by &lt;a href=&#34;https://www.bountysource.com/teams/weblate/issues&#34;&gt;providing bounty for them&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p style=&#34;font-size: smaller;&#34;&gt;
+Filed under: 
+
+&lt;a href=&#34;https://blog.cihar.com/archives/debian/&#34;&gt;Debian&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/english/&#34;&gt;English&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/suse/&#34;&gt;SUSE&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/weblate/&#34;&gt;Weblate&lt;/a&gt;
+
+&lt;/p&gt;</description>
+	<pubDate>Sun, 03 Mar 2019 17:00:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>Michal Čihař (michal@cihar.com): wlc 1.0</title>
+	<guid isPermaLink="false">tag:https://blog.cihar.com/,2019-01-31:https://blog.cihar.com/archives/2019/01/31/wlc-10/?utm_source=atom1</guid>
+	<link>https://blog.cihar.com/archives/2019/01/31/wlc-10/?utm_source=atom1</link>
+	<description>&lt;p&gt;&lt;a href=&#34;https://pypi.org/project/wlc/&#34;&gt;wlc 1.0&lt;/a&gt;, a command line utility for &lt;a href=&#34;https://weblate.org/&#34;&gt;Weblate&lt;/a&gt;, has been just released. The most important change is marking this stable and releasing actual 1.0. It has been around long enough to indicate it&#39;s stability.&lt;/p&gt;
+&lt;p&gt;Full list of changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Marked as stable release.&lt;/li&gt;
+&lt;li&gt;Added support for more parameters on file upload.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;wlc is built on top of Weblate &lt;a href=&#34;https://docs.weblate.org/en/latest/api.html&#34;&gt;API&lt;/a&gt;, you can use it on Weblate 2.10 or newer, though some features might require more recent version. Of course you use it on our &lt;a href=&#34;https://weblate.org/hosting/&#34;&gt;hosting offering&lt;/a&gt;. Usage examples can be found in the &lt;a href=&#34;https://docs.weblate.org/en/latest/wlc.html&#34;&gt;wlc documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p style=&#34;font-size: smaller;&#34;&gt;
+Filed under: 
+
+&lt;a href=&#34;https://blog.cihar.com/archives/debian/&#34;&gt;Debian&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/english/&#34;&gt;English&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/suse/&#34;&gt;SUSE&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.cihar.com/archives/weblate/&#34;&gt;Weblate&lt;/a&gt;
+
+&lt;/p&gt;</description>
+	<pubDate>Thu, 31 Jan 2019 12:26:12 +0000</pubDate>
+</item>
+
+<item>
+	<title>Madhura (noreply@blogger.com): phpMyAdmin work during twenty fifth, twenty sixth and twenty eighth weeks</title>
+	<guid isPermaLink="false">tag:https://madhuracj.blogspot.com/,2016-04-08:https://madhuracj.blogspot.com/2016/04/phpmyadmin-work-during-twenty-fifth.html</guid>
+	<link>https://madhuracj.blogspot.com/2016/04/phpmyadmin-work-during-twenty-fifth.html</link>
+	<description>This is my final blog post reporting about the work I have carried out under the phpMyAdmn developer contract. However, I will continue to contribute to phpMyAdmin in a voluntary basis.&lt;br /&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+During the period, my focus was solely on bus fixes. This was mostly due to the continuous stream of bugs we were receiving and most of the bugs were related to the newly released 4.6 version.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+Following are the bugs fixes during the period.&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;
+issue #12092 Rename exported databases/tables doesn&#39;t seem to work&lt;/div&gt;
+&lt;div&gt;
+issue #12099 Undefined index: controllink&lt;/div&gt;
+&lt;div&gt;
+issue #12094 PHP Fatal error: Call to undefined function __()&lt;/div&gt;
+&lt;div&gt;
+issue #12116 Fulltext indexes are not copied when using copy database function&lt;/div&gt;
+&lt;div&gt;
+issue #12125 Cannot highlight a column if I scroll down from the top of the table&lt;/div&gt;
+&lt;div&gt;
+issue #12132 Can not open table with JSON field&lt;/div&gt;
+&lt;div&gt;
+issue #12143 Cannot login with certain password&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+Additionally, I attended to the following bugs.&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;
+issue #12088 Improper comment creation and escaping with Percona 5.7 (` instead of &#39;, extra &#34;AS&#34;)&lt;/div&gt;
+&lt;div&gt;
+issue #12091 Import file does not working when data have \&#39; (4.6.0rc2)&lt;/div&gt;
+&lt;div&gt;
+issue #12101 Change or remove &#34;Slave replication&#34; &#34;Reset slave&#34;&lt;/div&gt;
+&lt;div&gt;
+issue #12104 Copy Database no longer working&lt;/div&gt;
+&lt;div&gt;
+issue #12115 Relations vs Orphans&lt;/div&gt;
+&lt;div&gt;
+issue #12139 Import Export error&lt;/div&gt;
+&lt;div&gt;
+issue #12130 Error for Browser when got error 500&lt;/div&gt;
+&lt;div&gt;
+issue #12149 Class &#39;PMA_Util&#39; not found&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+Moreover, I attended to following pull requests as well.&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;
+issue #12113 Add new server variables&lt;/div&gt;
+&lt;div&gt;
+issue #12136 Fix offering JSON datatype in incompatible MySQL versions&lt;/div&gt;
+&lt;/div&gt;</description>
+	<pubDate>Fri, 08 Apr 2016 02:15:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>Madhura (noreply@blogger.com): phpMyAdmin work during twenty third and twenty fourth weeks</title>
+	<guid isPermaLink="false">tag:https://madhuracj.blogspot.com/,2016-03-13:https://madhuracj.blogspot.com/2016/03/phpmyadmin-work-during-twenty-third-and.html</guid>
+	<link>https://madhuracj.blogspot.com/2016/03/phpmyadmin-work-during-twenty-third-and.html</link>
+	<description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+I &amp;nbsp;engaged in a mix of bug fixes and improvements (including refactoring) during the fortnight. The bugs fixed and attended are as follows.&lt;/div&gt;
+&lt;br /&gt;
+&lt;b&gt;Bugs fixed&lt;/b&gt;&lt;br /&gt;
+issue #12073 Hide edit and delete buttons when the results are not related to a table&lt;br /&gt;
+issue #12085 Like search strings being escaped incorrectly&lt;br /&gt;
+&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
+&lt;b&gt;Bugs attended&lt;/b&gt;&lt;br /&gt;
+issue #12071 Syntax error in PMA, not at command line client&lt;br /&gt;
+issue #12074 Invalid export&lt;br /&gt;
+issue #12087 Add support for JSON data type (in MySQL 5.7)&lt;br /&gt;
+&lt;br /&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+I went on to refactor the code that handled bookmarks. I used object orientation and updated the existing unit tests to suit the refactored code. Moreover, I updated the metro theme to be compatible with the upcoming 4.6.0 version, so phpMyAdmin has, at least, one additional theme compatible with the new version.&lt;/div&gt;
+&lt;br /&gt;
+&lt;b&gt;Refactoring&lt;/b&gt;&lt;br /&gt;
+Clean up dead code&lt;br /&gt;
+Refactor bookmark handling code&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Other improvements&lt;/b&gt;&lt;br /&gt;
+Update metro theme to be compatible with 4.6.0</description>
+	<pubDate>Sun, 13 Mar 2016 03:21:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>Madhura (noreply@blogger.com): phpMyAdmin work during twenty first and twenty second weeks</title>
+	<guid isPermaLink="false">tag:https://madhuracj.blogspot.com/,2016-03-01:https://madhuracj.blogspot.com/2016/02/phpmyadmin-work-during-twenty-first-and.html</guid>
+	<link>https://madhuracj.blogspot.com/2016/02/phpmyadmin-work-during-twenty-first-and.html</link>
+	<description>The work carried out during the two weeks was very diverse. I attended bug fixes (primarily), feature requests, documentation and questions, security issues, pull requests and code improvements in general.&lt;br /&gt;
+&lt;br /&gt;
+The bugs fixed and attended during the period are,&lt;br /&gt;
+Bugs fixed&lt;br /&gt;
+issue #11964 Undefined index: TABLE_COMMENT in database structure page&lt;br /&gt;
+issue #11969 Missing confirmation while dropping a view in view_operations.php&lt;br /&gt;
+issue #11977 Table name is not recognized by parser in DROP INDEX statement&lt;br /&gt;
+issue #11979 DECLARE not accepted as valid SQL&lt;br /&gt;
+issue #12017 Cannot easily select multiple tables when exporting&lt;br /&gt;
+Fix SQL syntax highlighting in database search page&lt;br /&gt;
+&lt;br /&gt;
+Bugs attended&lt;br /&gt;
+issue #11965 Deprecation Notice: StringReader has a deprecated constructor&lt;br /&gt;
+issue #11982 Row count wrong when grouping joined tables&lt;br /&gt;
+&lt;br /&gt;
+Additionally, following feature request was implemented and code improvements were performed.&lt;br /&gt;
+&lt;br /&gt;
+Feature requests&lt;br /&gt;
+issue #12017 Cannot easily select multiple tables when exporting&lt;br /&gt;
+&lt;br /&gt;
+Improvements&lt;br /&gt;
+Use back quotes around table names in confirmation messages&lt;br /&gt;
+Fix coding style violations&lt;br /&gt;
+&lt;br /&gt;
+Meanwhile, I also attended to pull requests submitted mainly bu GSoC aspirants.&lt;br /&gt;
+&lt;br /&gt;
+Pull requests attended&lt;br /&gt;
+issue #32 Fix Row count wrong when grouping joined tables, phpmyadmin/phpmyadmin#11982&lt;br /&gt;
+issue #12036 Fix for wrong mysql_upgrade message on Users tab with Percona Server 5.7&lt;br /&gt;
+&lt;br /&gt;
+Documentation and Questions&lt;br /&gt;
+issue #11970 Can you add an option to remove UUID for primary keys?&lt;br /&gt;
+issue #11972 Missing documentation for $cfg[&#39;Servers&#39;][$i][&#39;favorite&#39;] and $cfg[&#39;NumFavoriteTables&#39;]&lt;br /&gt;
+&lt;br /&gt;
+Towards the end of the month, we received two detailed reports on vulnerabilities in phpMyAdmin and I contributed by coordinating, and fixing the vulnerabilities.&lt;br /&gt;
+&lt;br /&gt;
+Security issues&lt;br /&gt;
+issue #12 1.3 XSS in tbl_type parameter [PMASA-2016-12]&lt;br /&gt;
+issue #13 1.4 XSS in normalization.php [PMASA-2016-12]&lt;br /&gt;
+issue #14 1.5 XSS in normalization.js [PMASA-2016-12]&lt;br /&gt;
+issue #15 1.6 XSS in normalization.js [PMASA-2016-12]&lt;br /&gt;
+issue #25 XSS in normalization.js [PMASA-2016-12]&lt;br /&gt;
+issue #26 XSS in User accounts page [PMASA-2016-11]&lt;br /&gt;
+issue #27 XSS in Central columns page [PMASA-2016-12]&lt;br /&gt;
+issue #28 XSS in Zoom search [PMASA-2016-11]</description>
+	<pubDate>Tue, 01 Mar 2016 04:10:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>Madhura (noreply@blogger.com): phpMyAdmin work during nineteenth and twentieth weeks</title>
+	<guid isPermaLink="false">tag:https://madhuracj.blogspot.com/,2016-02-14:https://madhuracj.blogspot.com/2016/02/phpmyadmin-work-during-nineteenth-and.html</guid>
+	<link>https://madhuracj.blogspot.com/2016/02/phpmyadmin-work-during-nineteenth-and.html</link>
+	<description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+During the&amp;nbsp;nineteenth and twentieth weeks, I was away from work between 2nd Feb to 10th Feb. However, during the rest of the days, I engaged in both code refactoring and bus fixes. Early on the fortnight, I refactored the server binary logs page to use the MVC architecture. This included introducing a controller class, using templating and updating unit tests.&lt;/div&gt;
+&lt;br /&gt;
+&lt;b&gt;Code refactoring&lt;/b&gt;&lt;br /&gt;
+Refactor server binary logs page to use MVC architecture&lt;br /&gt;
+&lt;br /&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+In terms of bugs, following bugs were fixed and more bugs were attended.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;b&gt;Bugs fixed&amp;nbsp;&lt;/b&gt;&lt;br /&gt;
+issue #11909 Can&#39;t insert row into table that contains generated column&lt;br /&gt;
+issue #11911 Inserts via tbl_change.php in VARBINARY columns does not allow using HEX() and MD5()&lt;br /&gt;
+issue #11923 Errors on Structure tab when user only has select access on certain columns&lt;br /&gt;
+issue #11942 Change column action takes ages&lt;br /&gt;
+&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
+&lt;b&gt;Bugs attended&lt;/b&gt;&lt;br /&gt;
+issue #11922 Browse fails with users who have only column privileges for some columns&lt;br /&gt;
+issue #11434 Class &#39;SqlParser\Lexer&#39; not found (OS X)</description>
+	<pubDate>Sun, 14 Feb 2016 23:03:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>Madhura (noreply@blogger.com): phpMyAdmin work during seventeenth and eighteenth weeks</title>
+	<guid isPermaLink="false">tag:https://madhuracj.blogspot.com/,2016-01-31:https://madhuracj.blogspot.com/2016/01/phpmyadmin-work-during-seventeenth-and.html</guid>
+	<link>https://madhuracj.blogspot.com/2016/01/phpmyadmin-work-during-seventeenth-and.html</link>
+	<description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+My work during these two weeks concentrated pretty much on the security vulnerabilities that were reported. We received two lengthy reports on a number of security vulnerabilities which included cross-site scripting, full path disclosure, weaknesses in token generation and comparison etc. Altogether these vulnerabilities resulted in 9 PMASAs taking into the different combinations of phpMyAdmin versions they affected.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+I contributed by fixing some vulnerabilities, testing security patches, porting some fixes done by others developers to older branches, preparing PMASAs and coordinating with the reporter, CVE team and phpMyAdmin security team.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+The latter part of the fortnight was spent on fixing two regressions introduced by the security releases.&amp;nbsp;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11891&amp;nbsp;Error with PMA 4.0.10.13 with PHP 5.2&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11892&amp;nbsp;Error with PMA 4.4.15.3&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Moreover, following bug was fixing during the two weeks.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11881&amp;nbsp;Full processlist lost on refresh&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;</description>
+	<pubDate>Sun, 31 Jan 2016 22:01:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>Madhura (noreply@blogger.com): phpMyAdmin work on sixteenth week</title>
+	<guid isPermaLink="false">tag:https://madhuracj.blogspot.com/,2016-01-17:https://madhuracj.blogspot.com/2016/01/phpmyadmin-work-on-sixteenth-week.html</guid>
+	<link>https://madhuracj.blogspot.com/2016/01/phpmyadmin-work-on-sixteenth-week.html</link>
+	<description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+I was continuing on my year-end break on&amp;nbsp;fifteenth&amp;nbsp;week and did not work during the week, except for 2 hours on 4th January. So this report includes work carried out during the sixteenth week.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+During the week, I concentrated solely on bug fixes since there were a sizable number of bugs being reported. Most of the bugs fixed were regressions. For example, #11771 and&amp;nbsp;#11846 were only present in latest git version and was due to refactoring and JS library updates respectively.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+The complete list of bugs fixed and investigated are as follows,&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Bugs Fixed&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11771 Transformation column path problem&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11772 Table pagination does nothing when session expired&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11810 &#39;Add to central columns&#39; in tbl_structure.php (per column button) nothing happens&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11814 SQL comment and variable stripped from bookmark on save&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11840 Index comments not working properly&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11846 Grid editing window is disabled the second time&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11854 Undefined property: stdClass::$releases at version check when disabled in config&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Bugs Investigated&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11712 &#34;Browse Foreign Values&#34; Search broken across databases in 4.5.2&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11713 Not receiving notifications for updates&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11842 Fractional timestamp not supported&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11843 Fractional timestamp causes corrupted SQL export&lt;/div&gt;</description>
+	<pubDate>Sun, 17 Jan 2016 21:25:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>Madhura (noreply@blogger.com): phpMyAdmin work during twelfth, thirteenth and forteenth weeks</title>
+	<guid isPermaLink="false">tag:https://madhuracj.blogspot.com/,2016-01-02:https://madhuracj.blogspot.com/2016/01/phpmyadmin-work-during-twelfth.html</guid>
+	<link>https://madhuracj.blogspot.com/2016/01/phpmyadmin-work-during-twelfth.html</link>
+	<description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+With my personal engagements and summer break, I worked only for 13 hours during the three weeks. During the period, I was mostly engaged with refactoring work and improving the unit testing.&amp;nbsp;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Continuing from the last couple of weeks, I refactored the server plugins page to use the MVC architecture. Code segments that were previously in a library file were moved to a controller class and instance variables were introduced as required. The view was changed to use templating and unit tests were updated to match the new classes.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+I also went on to improve the unit testing by introducing a parent class to all the unit tests. With the new class, configuration values are reset to their default values for each test class. The idea was to make unit tests independent from changes made to configuration values in other unit tests. Meanwhile, unnecessary configuration values assignments in tests were removed.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Additionally, following bugs were investigated during the period.&lt;/div&gt;
+&lt;br /&gt;
+&lt;b&gt;Bugs Investigated&lt;/b&gt;&lt;br /&gt;
+issue #11743&amp;nbsp;Display routine-specific privileges under Database &amp;gt; Privileges&lt;br /&gt;
+issue #11751&amp;nbsp;Bug when export template is selected</description>
+	<pubDate>Sat, 02 Jan 2016 12:22:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>Madhura (noreply@blogger.com): phpMyAdmin work during tenth and eleventh weeks</title>
+	<guid isPermaLink="false">tag:https://madhuracj.blogspot.com/,2015-12-12:https://madhuracj.blogspot.com/2015/12/phpmyadmin-work-during-tenth-and.html</guid>
+	<link>https://madhuracj.blogspot.com/2015/12/phpmyadmin-work-during-tenth-and.html</link>
+	<description>&lt;div style=&#34;text-align: justify;&#34;&gt;
+During the two weeks most I attended a mix of bug fixing, implementing new features, refactoring and unit test improvements.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+I did not realize that some of the unit tests were not running as part of the test suite unit Michal pointed out and included them. However, this caused quite some test failures as most of the recently added and updated tests had not been running. These were fixed at the very beginning of the period.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;b&gt;&lt;br /&gt;&lt;/b&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;b&gt;Unit Testing&lt;/b&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Fix unit test failures related to refactoring&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Quite a number of bugs were fixed during the two weeks and some more were investigated. Following are the list of bug fixes attended.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;b&gt;Bug Fixes&lt;/b&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11701 Show create procedure SQL&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11706 Database export template not saving compression option&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11710 Unable to add/remove `on update CURRENT_TIMESTAMP` option while editing a timestamp field&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11724 Temporary fix for live data edit of big sets is not working&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11728 CSV import skip row count after&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11732 Exporting feature does not work with union table&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Exclude db name in SQL when relations are made between table in the same db&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Buffer pool and InnoDB status details are not shown for InnoDB&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;b&gt;Bug Investigations&lt;/b&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11722 Excel import improper handling of dates/times&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11732 &#34;Browse Foreign Values&#34; Search broken across databases in 4.5.2&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11734 No result shown, if writing statement, comment, single select&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Inbility to reorder parameters of routines had bothered me in the past. So, as requested in issue #11701, I implemented the ability to do this.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;b&gt;&lt;br /&gt;&lt;/b&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;b&gt;Feature Enhancements&lt;/b&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+issue #11701 Allow changing parameter order of routines&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Moreover, continueing the refactoring effert from last fortnight I went on to refactor server engines page. This involed introducing a controller class and using templating to adhere to MVC pattern. Unit tests were also updated to match the new classes.&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+&lt;b&gt;Refactoring&lt;/b&gt;&lt;/div&gt;
+&lt;div style=&#34;text-align: justify;&#34;&gt;
+Refactor server engines page to use MVC pattern&amp;nbsp;&lt;/div&gt;</description>
+	<pubDate>Sat, 12 Dec 2015 22:51:00 +0000</pubDate>
+</item>
+
+</channel>
+</rss>
