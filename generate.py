@@ -7,6 +7,7 @@ from jinja2 import Environment, FileSystemLoader
 
 import sqlite3
 import time
+import pathlib
 
 MAX_ENTRIES_PER_FEED = 8
 
@@ -37,6 +38,9 @@ c.execute('''SELECT f.name, f.blog_url, f.title as blog_title,
 posts = c.fetchall()
 
 conn.close()
+
+
+pathlib.Path('output').mkdir(parents=True, exist_ok=True)
 
 
 file_loader = FileSystemLoader('templates')
