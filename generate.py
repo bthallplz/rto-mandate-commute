@@ -9,6 +9,9 @@ import sqlite3
 import time
 import pathlib
 
+SITE_NAME = "Developers Planet"
+SITE_URL = "https://devplanet.one.pl/" # Provide a trailing backslash: /
+
 MAX_ENTRIES_PER_FEED = 8
 
 
@@ -51,7 +54,7 @@ template = env.get_template('index.html.j2')
 
 output = template.render(generate_time=datetime.strftime(datetime.now(),
                                                          "%d %B %Y %H:%M"),
-                         posts=posts, feeds=feeds)
+                         posts=posts, feeds=feeds, site_name=SITE_NAME)
 
 with open('output/index.html', 'w') as html:
     html.write(output)
@@ -61,7 +64,7 @@ template = env.get_template('titles_only.html.j2')
 
 output = template.render(generate_time=datetime.strftime(datetime.now(),
                                                          "%d %B %Y %H:%M"),
-                         posts=posts, feeds=feeds)
+                         posts=posts, feeds=feeds, site_name=SITE_NAME)
 
 with open('output/titles_only.html', 'w') as html:
     html.write(output)
@@ -71,7 +74,7 @@ template = env.get_template('rss20.xml.j2')
 
 output = template.render(generate_time=datetime.strftime(datetime.now(),
                                                          "%d %B %Y %H:%M"),
-                         posts=posts, feeds=feeds)
+                         posts=posts, feeds=feeds, site_name=SITE_NAME, site_url=SITE_URL)
 
 with open('output/rss20.xml', 'w') as rss:
     rss.write(output)

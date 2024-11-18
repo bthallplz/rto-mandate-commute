@@ -12,6 +12,7 @@ This is the result of few hours of playing with FeedParser and Jinja2.
 2. `fetch.py` script will connect to each feed and fetch it's posts.
 3. `generate.py` loads template files and outputs result (HTML page and RSS 2.0
    feed XML).
+   - Be sure to update the values for the variables `SITE_NAME` and `SITE_URL` in this file to reflect your planet's name and URL.
 
 # Features
 
