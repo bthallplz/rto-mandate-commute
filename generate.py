@@ -38,6 +38,7 @@ c.execute('''SELECT f.name, f.blog_url, f.title as blog_title,
 				AND p.published_date > date('now', '-7 days')
              ORDER by p.published_date DESC''')
 
+
 posts = c.fetchall()
 
 conn.close()
