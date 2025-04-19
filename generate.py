@@ -35,8 +35,8 @@ c.execute('''SELECT f.name, f.blog_url, f.title as blog_title,
                     p.author
              FROM posts p, feeds f
              WHERE f.id = p.feed_id
-             ORDER by p.published_date DESC
-             LIMIT 20''')
+				AND p.published_date > date('now', '-7 days')
+             ORDER by p.published_date DESC''')
 
 posts = c.fetchall()
 
@@ -78,19 +78,3 @@ output = template.render(generate_time=datetime.strftime(datetime.now(),
 
 with open('output/rss20.xml', 'w') as rss:
     rss.write(output)
-
-# Copying the planet.css file to the /output directory if it isn't already in there
-import shutil
-import os
-
-# Define source file and destination directory
-source_file = "./templates/planet.css"
-destination_dir = "./output"
-
-# Check if file exists in the destination directory
-if not os.path.isfile(os.path.join(destination_dir, os.path.basename(source_file))):
-    # File does not exist in the destination directory, copy the source file
-    shutil.copy(source_file, destination_dir)
-    print("Copied file to the destination directory.")
-else:
-    print("File already exists in the destination directory.")
