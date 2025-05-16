@@ -6,33 +6,38 @@ import configparser
 import sqlite3
 import sys
 
+
+# TODO: Check if database file exists
 database = sqlite3.connect("commute_data.db")
 
 c = database.cursor()
 
-c.execute(
-    """CREATE TABLE commutes
-             (id integer primary key autoincrement,
-              name text,
-              title text,
-              blog_url text,
-              url text,
-              etag text,
-              modified text)
-          """
-)
+try:
+    c.execute(
+        """CREATE TABLE commutes
+                (id integer primary key autoincrement,
+                name text UNIQUE,
+                title text,
+                blog_url text,
+                url text,
+                etag text,
+                modified text)
+            """
+    )
 
-c.execute(
-    """CREATE TABLE trips
-             (id integer primary key autoincrement,
-             commute_id integer,
-             author text,
-             title text,
-             post text,
-             url text,
-             published_date datetime)
-          """
-)
+    c.execute(
+        """CREATE TABLE trips
+                (id integer primary key autoincrement,
+                commute_id integer,
+                author text,
+                title text,
+                post text,
+                url text,
+                published_date datetime)
+            """
+    )
+except:
+    print("Tables already created.")
 
 # TODO: Read in the configs for commutes
 if len(sys.argv) > 1:
@@ -53,7 +58,10 @@ if len(sys.argv) > 1:
         print(f"{section} {config[section]['name']}")
         c.execute(
             f"""INSERT INTO commutes (name, url) VALUES
-                  ("{config[section]['name']}", "{section}")"""
+                  ("{config[section]['name']}", "{section}")
+                  ON CONFLICT(name) DO UPDATE SET
+                    url=excluded.url
+                  """
         )
 
 database.commit()
