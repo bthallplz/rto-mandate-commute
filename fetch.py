@@ -34,8 +34,8 @@ for commute in c.fetchall():
         try:
             c.execute(
                 # TODO: Add in other data fields we're gathering from API response + time of initiating all commutes (this time around)
-                """INSERT INTO trips (commute_id) VALUES (?)""",
-                (commute["id"],) # Seems to require a tuple, so needs a trailing comma if only one element
+                """INSERT INTO trips (commute_id, duration_in_traffic_seconds) VALUES (?, ?)""",
+                (commute["id"],2) # Seems to require a tuple, so needs a trailing comma if only one element
             )
         except ValueError:
             pass

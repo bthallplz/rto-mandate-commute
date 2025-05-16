@@ -33,11 +33,12 @@ try:
                 title text,
                 post text,
                 url text,
-                published_date datetime)
+                published_date datetime,
+                duration_in_traffic_seconds integer)
             """
     )
 except:
-    print("Tables already created.")
+    print("Database tables already created.")
 
 # TODO: Read in the configs for commutes
 if len(sys.argv) > 1:
