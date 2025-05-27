@@ -6,45 +6,53 @@ import configparser
 import sqlite3
 import sys
 
-conn = sqlite3.connect('feeds.db')
 
-c = conn.cursor()
+# TODO: Check if database file exists
+database = sqlite3.connect("commute_data.db")
+database.execute("PRAGMA foreign_keys = 1") # enabling foreign keys
 
-c.execute('''CREATE TABLE settings
-             (name text,
-              url text)
-          ''')
+c = database.cursor()
 
-c.execute('''CREATE TABLE feeds
-             (id integer primary key autoincrement,
-              name text,
-              title text,
-              blog_url text,
-              url text,
-              etag text,
-              modified text)
-          ''')
+try:
+    c.execute(
+        """CREATE TABLE commutes
+                (id integer primary key autoincrement,
+                name text UNIQUE,
+                home_location text,
+                work_location text)
+            """
+    )
+    
+    c.execute(
+        """CREATE TABLE trips
+                (id integer primary key autoincrement,
+                commute_id integer,
+                trip_datetime datetime,
+                duration_in_traffic_seconds integer,
+                destination text,
+                FOREIGN KEY(commute_id) REFERENCES commutes(id))
+            """
+    )
+except:
+    print("Database tables already created.")
 
-c.execute('''CREATE TABLE posts
-             (id integer primary key autoincrement,
-             feed_id integer,
-             author text,
-             title text,
-             post text,
-             url text,
-             published_date datetime)
-          ''')
-
+# TODO: Read in the configs for commutes
 if len(sys.argv) > 1:
-
     config = configparser.ConfigParser()
     config.read(sys.argv[1])
 
+    # TODO: Plan how the commutes .ini files should work/be structured
     for section in config.sections():
-        if section == 'Planet':
+        if section == "Planet":
             continue
-        print(f"{section} {config[section]['name']}")
-        c.execute(f'''INSERT INTO feeds (name, url) VALUES
-                  ("{config[section]['name']}", "{section}")''')
+        print(f"{section}: from '{config[section]['home_location']}' to '{config[section]['work_location']}' and vice versa")
+        c.execute(
+            f"""INSERT INTO commutes (name, home_location, work_location) VALUES
+                  ("{section}", "{config[section]['home_location']}", "{config[section]['work_location']}")
+                  ON CONFLICT(name) DO UPDATE SET
+                    home_location=excluded.home_location,
+                    work_location=excluded.work_location
+                  """
+        )
 
-conn.commit()
+database.commit()

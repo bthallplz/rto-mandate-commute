@@ -4,126 +4,99 @@
 
 from datetime import datetime
 
-import feedparser
-import re
 import sqlite3
 import sys
 import time
+import googlemaps
 
-MAX_ENTRIES_PER_FEED = 8
 
-force = False
+if len(sys.argv) > 2:
+    
+    gmaps = googlemaps.Client(key=sys.argv[1]) # Setting the Google Maps API key via an argument we pass to the script
 
-if len(sys.argv) > 1 and sys.argv[1] == '--force':
-    force = True
+    if sys.argv[2] == "to-work":
+        print('Going to work!\n')
+        
+        destination = "work"
+    
+    elif sys.argv[2] == "to-home":
+        print('Going home! Finally!\n')
+        
+        destination = "home"
+    
+    else:
+        print(
+"""You need to set a second argument for the fetch.py script that specifies what the destination will be.
+Say "to-work" if we're headed to work, or "to-home" if we're headed home."""
+)
+        destination = "unspecified"
 
-conn = sqlite3.connect('feeds.db')
-conn.row_factory = sqlite3.Row
+    database = sqlite3.connect("commute_data.db")
+    database.row_factory = sqlite3.Row
 
-c = conn.cursor()
+    c = database.cursor()
 
-c.execute('SELECT * FROM feeds')
+    c.execute("SELECT * FROM commutes")
+    
+    now = datetime.now()
 
-author_regexp = re.compile(r'noreply@blogger.com \((.*)\)$')
+    # Adapt the dates so we can continue to read them into SQLite
+    def adapt_datetime_iso(val):
+        """Adapt datetime.datetime to timezone-naive ISO 8601 date."""
+        return val.isoformat()
 
-for feed in c.fetchall():
-    print(feed['name'])
+    sqlite3.register_adapter(datetime, adapt_datetime_iso)
 
-    etag = feed['etag']
-    modified = feed['modified']
+    # Request the commute time in seconds from the Google Maps API
+    def get_travel_time(from_loc, to_loc):
+            directions_result = gmaps.directions(from_loc,
+                                                to_loc,
+                                                mode="driving",
+                                                departure_time=now)
 
-    if force:
-        etag = 0
-        modified = 0
-
-    url = feed['url']
-
-    try:
-        # etag and modified tell when we last checked so can get only newer
-        # posts
-        data = feedparser.parse(url, etag=etag, modified=modified)
-
-        if data.bozo and 'link' not in data.feed:
-            print(data.bozo)
-            print(data.bozo_exception)
-            print(data.feed)
-            continue
-
-        if 'etag' not in data:
-            data.etag = 0
-        if 'modified' not in data:
-            data.modified = 0
-        if 'status' not in data:
-            data.status = 200
-
-        # if 304 then no data fetched
-        if 'title' in data.feed:
-            title = data.feed.title
+            return directions_result[0]['legs'][0]['duration_in_traffic']['value'] # In seconds
+    
+    
+    for commute in c.fetchall():
+                
+        # Call get_travel_time() differently based on if we're headed to work or to home
+        if destination == "work":
+            duration_in_traffic_seconds = get_travel_time(commute["home_location"], commute["work_location"])
+            
+            print(f'''Current time to work from {commute["name"]}: {duration_in_traffic_seconds / 60} minutes''')
+    
+        elif destination == "home":
+            duration_in_traffic_seconds = get_travel_time(commute["work_location"], commute["home_location"])
+            
+            print(f'''Current time to {commute["name"]} from work: {duration_in_traffic_seconds / 60} minutes''')
+        
         else:
-            title = feed['title']
-        if 'link' in data.feed:
-            link = data.feed.link
-        else:
-            link = feed['blog_url']
+            print("No directions requested, as 'destination' says something unexpected!")
 
-        print(f'''
-ETag:      {data.etag}
-Modified:  {data.modified}
-Status:    {data.status}
-Posts:     {len(data.entries)}
-''')
-        if data.status == 301:  # permanent redirection
-            url = data.href
 
-        c.execute('''UPDATE feeds
-                     SET etag=?, modified=?, url=?, title=?, blog_url=?
-                     WHERE id=?''',
-                  (data.etag, data.modified, url, title, link, feed['id'],))
-
-        # if we got all posts then drop all stored ones
-        if data.status == 200:
-            c.execute('DELETE FROM posts WHERE feed_id=?', (feed['id'],))
-
-        counter = 0
-        for post in data.entries:
-
-            if 'content' in post:
-                content = post.content[0].value
-            elif 'summary' in post:
-                content = post.summary
-
-            if 'author' not in post:
-                author = feed['name']
-            else:
-                author = post.author
-
-            # Blogger
-            author = author_regexp.sub(r'\1', author)
-
+        # Writing the commute time data to the database
+        try:
+            # TODO: Insert the data fields from the Google Maps API response into the db
             try:
-                published = datetime.fromtimestamp(
-                    time.mktime(post.published_parsed[:8] + (-1,)))
-            except AttributeError:
-                published = datetime.fromtimestamp(
-                    time.mktime(post.updated_parsed[:8] + (-1,)))
-
-            try:
-                c.execute('''INSERT INTO posts (feed_id, title, post, url,
-                        author, published_date) VALUES (?, ?, ?, ?, ?, ?)''',
-                        (feed['id'], post.title, content, post.link, author,
-                        published))
+                c.execute(
+                    """INSERT INTO trips (commute_id, duration_in_traffic_seconds, trip_datetime, destination) VALUES (?, ?, ?, ?)""",
+                    (commute["id"],duration_in_traffic_seconds, now, destination) # Seems to require a tuple, so needs a trailing comma if only one element
+                )
             except ValueError:
                 pass
 
-            counter += 1
-            if counter == MAX_ENTRIES_PER_FEED:
-                break
+        except RuntimeError:
+            print("failed")
+            pass
 
-    except RuntimeError:
-        print('failed')
-        pass
 
-    print(' ')
+    database.commit()
+    database.close()
 
-conn.commit()
-conn.close()
+else:
+    print(
+"""Please provide two arguments along with this `fetch.py` script:
+
+1. the Google Maps API key we should use when gathering commute times
+
+2. the phrase that specifies what the destination will be. Say "to-work" if we're headed to work, or 'to-home' if we're headed home.""")
