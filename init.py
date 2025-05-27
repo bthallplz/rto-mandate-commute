@@ -29,6 +29,7 @@ try:
                 commute_id integer,
                 trip_datetime datetime,
                 duration_in_traffic_seconds integer,
+                destination text,
                 FOREIGN KEY(commute_id) REFERENCES commutes(id))
             """
     )

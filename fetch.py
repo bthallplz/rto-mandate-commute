@@ -58,24 +58,29 @@ Say "to-work" if we're headed to work, or "to-home" if we're headed home."""
     
     
     for commute in c.fetchall():
-        print(commute["name"], destination)
+                
+        # Call get_travel_time() differently based on if we're headed to work or to home
+        if destination == "work":
+            duration_in_traffic_seconds = get_travel_time(commute["home_location"], commute["work_location"])
+            
+            print(f'''Current time to work from {commute["name"]}: {duration_in_traffic_seconds / 60} minutes''')
+    
+        elif destination == "home":
+            duration_in_traffic_seconds = get_travel_time(commute["work_location"], commute["home_location"])
+            
+            print(f'''Current time to {commute["name"]} from work: {duration_in_traffic_seconds / 60} minutes''')
         
-        home_to_work = 61 # Dummy amount of seconds for us to use while testing this, instead of making a request to the API - use get_travel_time() when live
-        
-        work_to_home = 161 # Dummy amount of seconds for us to use while testing this, instead of making a request to the API - use get_travel_time() when live
+        else:
+            print("No directions requested, as 'destination' says something unexpected!")
 
-        print(
-f'''Current time to work from home: {home_to_work / 60} minutes
 
-Current time to home from work: {work_to_home / 60} minutes''')
-
+        # Writing the commute time data to the database
         try:
             # TODO: Insert the data fields from the Google Maps API response into the db
             try:
                 c.execute(
-                    # TODO: Add in other data fields we're gathering from API response + time of initiating all commutes (this time around)
-                    """INSERT INTO trips (commute_id, duration_in_traffic_seconds, trip_datetime) VALUES (?, ?, ?)""",
-                    (commute["id"],home_to_work, now) # Seems to require a tuple, so needs a trailing comma if only one element
+                    """INSERT INTO trips (commute_id, duration_in_traffic_seconds, trip_datetime, destination) VALUES (?, ?, ?, ?)""",
+                    (commute["id"],duration_in_traffic_seconds, now, destination) # Seems to require a tuple, so needs a trailing comma if only one element
                 )
             except ValueError:
                 pass
@@ -84,7 +89,6 @@ Current time to home from work: {work_to_home / 60} minutes''')
             print("failed")
             pass
 
-        print(" ")
 
     database.commit()
     database.close()
