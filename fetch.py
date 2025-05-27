@@ -10,21 +10,26 @@ import time
 import googlemaps
 
 
-if len(sys.argv) > 1:
+if len(sys.argv) > 2:
     
     gmaps = googlemaps.Client(key=sys.argv[1]) # Setting the Google Maps API key via an argument we pass to the script
 
     if sys.argv[2] == "to-work":
         print('Going to work!\n')
+        
+        destination = "work"
     
     elif sys.argv[2] == "to-home":
         print('Going home! Finally!\n')
+        
+        destination = "home"
     
     else:
         print(
 """You need to set a second argument for the fetch.py script that specifies what the destination will be.
 Say "to-work" if we're headed to work, or "to-home" if we're headed home."""
 )
+        destination = "unspecified"
 
     database = sqlite3.connect("commute_data.db")
     database.row_factory = sqlite3.Row
@@ -53,7 +58,7 @@ Say "to-work" if we're headed to work, or "to-home" if we're headed home."""
     
     
     for commute in c.fetchall():
-        print(commute["name"])
+        print(commute["name"], destination)
         
         home_to_work = 61 # Dummy amount of seconds for us to use while testing this, instead of making a request to the API - use get_travel_time() when live
         
@@ -66,15 +71,10 @@ Current time to home from work: {work_to_home / 60} minutes''')
 
         try:
             # TODO: Insert the data fields from the Google Maps API response into the db
-            """
-            TODO: Use this for current time:
-                `datetime.strftime(datetime.now(),
-                    "%d %B %Y %H:%M")`
-            """
             try:
                 c.execute(
                     # TODO: Add in other data fields we're gathering from API response + time of initiating all commutes (this time around)
-                    """INSERT INTO trips (commute_id, duration_in_traffic_seconds, published_date) VALUES (?, ?, ?)""",
+                    """INSERT INTO trips (commute_id, duration_in_traffic_seconds, trip_datetime) VALUES (?, ?, ?)""",
                     (commute["id"],home_to_work, now) # Seems to require a tuple, so needs a trailing comma if only one element
                 )
             except ValueError:
@@ -90,4 +90,9 @@ Current time to home from work: {work_to_home / 60} minutes''')
     database.close()
 
 else:
-    print("Please provide as an argument along with this `fetch.py` script the Google Maps API key we should use when gathering commute times.")
+    print(
+"""Please provide two arguments along with this `fetch.py` script:
+
+1. the Google Maps API key we should use when gathering commute times
+
+2. the phrase that specifies what the destination will be. Say "to-work" if we're headed to work, or 'to-home' if we're headed home.""")
